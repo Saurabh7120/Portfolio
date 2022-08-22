@@ -29,7 +29,7 @@ const Navigator = () => {
         {
             num:1,
             name: 'About Me',
-            route: ''
+            route: '/'
         },
         {
             num:2,
