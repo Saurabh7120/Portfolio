@@ -4,6 +4,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -60,8 +61,41 @@ a {
   transition-timing-function: linear;
 }
 
+.glass-background{
+  background: rgba(255, 255, 255, 0.4);;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur( 6.5px );
+  border: 1px solid rgba(255, 255, 255, 0.59);
+}
+
+#bgVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  object-fit: cover;
+}
+
 .fadeIn{
   animation: blinkAnimation 1s forwards ease-in;
+}
+
+.vibrate{
+  animation: vibrateAnimation 1s forwards ease-in infinite;
+}
+
+@keyframes vibrateAnimation{
+  0%{
+    bottom: 0px;
+  }
+  50%{
+    bottom: 8px;
+  }
+  100%{
+    bottom: 0px;
+  }
 }
 
 @keyframes progressAnimation{

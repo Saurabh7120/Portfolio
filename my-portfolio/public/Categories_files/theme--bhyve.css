@@ -1,0 +1,13 @@
+body {
+    --chakra-colors-brand-50: #fff9da;
+    --chakra-colors-brand-100: #ffecad;
+    --chakra-colors-brand-200: #ffdf7d;
+    --chakra-colors-brand-300: #ffd24b;
+    --chakra-colors-brand-400: #ffc61a;
+    --chakra-colors-brand-500: #ffc61a;
+    --chakra-colors-brand-600: #b38600;
+    --chakra-colors-brand-700: #806000;
+    --chakra-colors-brand-800: #4e3900;
+    --chakra-colors-brand-900: #1d1300;
+    --override-text-color: #000000;
+}

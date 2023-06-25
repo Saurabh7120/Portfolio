@@ -1,6 +1,7 @@
-import AboutMeLeft from '../components/about-me/about-me-left'
-import AboutMeRight from '../components/about-me/about-me-right'
+
+import AboutMe from '../components/about-me'
 import Layout from '../components/core/Layout'
+import Top from '../components/top'
 
 export default function Home() {
 
@@ -15,10 +16,14 @@ export default function Home() {
   // },[])
 
   return (
-    <Layout
-    title={"About Me"}
-    left={<AboutMeLeft/>}
-    right={<AboutMeRight/>}
-/>
+    <>
+        <video autoPlay muted loop id="bgVideo">
+            <source src="/bg-gradient.mp4" type="video/mp4"/>
+        </video>
+        <Layout>
+          <Top/>
+          <AboutMe/>
+        </Layout>
+    </>
   )
 }
