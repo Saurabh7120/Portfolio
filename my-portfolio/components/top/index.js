@@ -39,7 +39,7 @@ const Top = () => {
             <>
                 <Avatar src='/saurabh.jpg' size={'2xl'} mb={5}/>
                 <Text fontSize={'xl'} fontWeight={'bold'} >Hello there,</Text>
-                <Text fontSize={'xl'} fontWeight={'bold'} >I'm</Text>
+                <Text fontSize={'xl'} fontWeight={'bold'} >{"I'm"}</Text>
                 <Text fontSize={'3xl'} py={3} lineHeight="1" color="#F1F1F3" fontWeight={'bold'}>Saurabh Mane</Text>
                 <Text fontSize={'4xl'} lineHeight="taller" pt={2}  fontWeight={'bold'}>{displayText}<span className='cursor'></span></Text>
             </>
